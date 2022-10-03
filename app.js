@@ -31,3 +31,49 @@ favBook.info = function(){
 }
 
 favBook.info();
+
+//exercise3
+let sentence = "The quick brown fox jumps over the lazy dog";
+function reverseWords(sentence) {
+    let words = sentence.split(" ");
+    let result = "";
+    for(let i = 0; i < words.length; i++){
+        let characters = words[i].split("");
+        characters.reverse();
+        result += characters;
+
+    }
+    return result
+}
+
+console.log(reverseWords(sentence));
+
+//exersice4
+let csvData = "name,age\nFrodo,50\nSam,38\nMerry,36\nPippin,26";
+let data = csvData.split('\n');
+console.log(data);
+let header1 = data[0];
+console.log(header1);
+let rows = {
+    num1: "Frodo",
+    age1: 50,
+
+    num2: "Sam",
+    age2:38,
+
+    num3: "Merry",
+    age3:36,
+
+    num4: "Pippin",
+    age4:26
+}
+
+console.log(`${rows.num1} ${rows.age1}`);
+console.log(`${rows.num2} ${rows.age2}`);
+console.log(`${rows.num3} ${rows.age3}`);
+console.log(`${rows.num4} ${rows.age4}`);
+
+
+   
+
+
